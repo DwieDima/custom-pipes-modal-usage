@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="modalController.dismiss()">
+        close
+      </ion-button>
+    </ion-buttons>
+    <ion-title>modal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    {{ 'This string will be shorten by custom pipe inside parent' | shorten:20
+    }}
+  </div>
+</ion-content>
